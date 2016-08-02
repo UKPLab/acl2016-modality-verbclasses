@@ -48,7 +48,7 @@ public class VerbCountingPipeline
     	
         SimplePipeline.runPipeline(
                 createReaderDescription(
-                		TigerXmlReader.class,
+                	TigerXmlReader.class,
                         TigerXmlReader.PARAM_SOURCE_LOCATION, UBY_HOME+"/tiger",
                         TigerXmlReader.PARAM_PATTERNS, "*.xml",
                         TigerXmlReader.PARAM_LANGUAGE, "de"),
@@ -63,9 +63,8 @@ public class VerbCountingPipeline
         		SimplePipeline.runPipeline(
         			createReaderDescription(
 	                 		ImsCwbReader.class,
-							ImsCwbReader.PARAM_ENCODING, "UTF-8",
-							// C:\Users\Judith\corpora\dewac\sdewac
-			                ResourceCollectionReaderBase.PARAM_SOURCE_LOCATION,     new File("C:/Users/Judith/corpora/dewac/filtered/").getAbsolutePath(),
+					ImsCwbReader.PARAM_ENCODING, "UTF-8",
+			                ResourceCollectionReaderBase.PARAM_SOURCE_LOCATION, new File("C:/Users/Judith/corpora/dewac/filtered/").getAbsolutePath(),
 			                ResourceCollectionReaderBase.PARAM_PATTERNS, new String[] { "*.tagged" },
 			                ResourceCollectionReaderBase.PARAM_LANGUAGE, "de"),
 	                createEngineDescription(GermanSeparatedParticleAnnotator.class),
@@ -77,17 +76,17 @@ public class VerbCountingPipeline
 */
     	 
  /*       
-          			SimplePipeline.runPipeline(
-					createReaderDescription(
-							WikipediaArticleReader.class,
-							WikipediaReaderBase.PARAM_HOST, "localhost",
-							WikipediaReaderBase.PARAM_DB, "wikiapi_de_20090618",
-							WikipediaReaderBase.PARAM_USER, "eckle",
-							WikipediaReaderBase.PARAM_PASSWORD, "JupiterPluto",							
-							WikipediaReaderBase.PARAM_LANGUAGE, Language.german
-			                ), 
+          	SimplePipeline.runPipeline(
+			createReaderDescription(
+				WikipediaArticleReader.class,
+				WikipediaReaderBase.PARAM_HOST, "localhost",
+				WikipediaReaderBase.PARAM_DB, "wikiapi_de_20090618",
+				WikipediaReaderBase.PARAM_USER, "db-username",
+				WikipediaReaderBase.PARAM_PASSWORD, "db-password",							
+				WikipediaReaderBase.PARAM_LANGUAGE, Language.german
+			        ), 
                 createEngineDescription(LanguageToolSegmenter.class),
-                createEngineDescription(TreeTaggerPosLemmaTT4J.class),
+                createEngineDescription(TreeTaggerPosTagger.class),
                 createEngineDescription(GermanSeparatedParticleAnnotator.class),
                 createEngineDescription(VerbCounter.class,
                 		VerbCounter.PARAM_OUTPUT_FILE, 
