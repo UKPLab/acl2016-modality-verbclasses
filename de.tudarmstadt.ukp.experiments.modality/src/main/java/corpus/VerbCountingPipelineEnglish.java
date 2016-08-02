@@ -55,43 +55,5 @@ public class VerbCountingPipelineEnglish
                 		UBY_HOME+"/verbClasses/" +"reuters" +"VerblemmaList")
                 );
 
-
-    	/*
-        		SimplePipeline.runPipeline(
-        			createReaderDescription(
-	                 		ImsCwbReader.class,
-							ImsCwbReader.PARAM_ENCODING, "UTF-8",
-							// C:\Users\Judith\corpora\dewac\sdewac
-			                ResourceCollectionReaderBase.PARAM_SOURCE_LOCATION,     new File("C:/Users/Judith/corpora/dewac/filtered/").getAbsolutePath(),
-			                ResourceCollectionReaderBase.PARAM_PATTERNS, new String[] { "*.tagged" },
-			                ResourceCollectionReaderBase.PARAM_LANGUAGE, "de"),
-	                createEngineDescription(GermanSeparatedParticleAnnotator.class),
-	                createEngineDescription(VerbCounter.class,
-                		VerbCounter.PARAM_OUTPUT_FILE,
-                		UBY_HOME+"/verbClasses/" +"sdewac" +"VerblemmaList")
-                );
-
-*/
-
- /*
-          			SimplePipeline.runPipeline(
-					createReaderDescription(
-							WikipediaArticleReader.class,
-							WikipediaReaderBase.PARAM_HOST, "localhost",
-							WikipediaReaderBase.PARAM_DB, "wikiapi_de_20090618",
-							WikipediaReaderBase.PARAM_USER, "eckle",
-							WikipediaReaderBase.PARAM_PASSWORD, "JupiterPluto",
-							WikipediaReaderBase.PARAM_LANGUAGE, Language.german
-			                ),
-                createEngineDescription(LanguageToolSegmenter.class),
-                createEngineDescription(TreeTaggerPosLemmaTT4J.class),
-                createEngineDescription(GermanSeparatedParticleAnnotator.class),
-                createEngineDescription(VerbCounter.class,
-                		VerbCounter.PARAM_OUTPUT_FILE,
-                		UBY_HOME+"/verbClasses/" +"wikipedia" +"VerblemmaList")
-					);
-*/
-
-
     }
 }
