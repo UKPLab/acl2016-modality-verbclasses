@@ -50,7 +50,7 @@ Don't hesitate to send me an e-mail or report an issue, if something is broken (
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
 
 ## Project structure
- * The package `align` contains the implementation of the verb sense linking algorithm based on the [DKPro Uby](https://dkpro.github.io/dkpro-uby/) framework. .
+ * The package `align` contains the implementation of the verb sense linking algorithm based on the [DKPro Uby](https://dkpro.github.io/dkpro-uby/) framework.
    * to run the main class `AlignVerbClasses` you need a UBY database contatining the IMSLex subset, GermaNet, VerbNet, FrameNet and WordNet. Please contact me to obtain such a database, this requires that you have a [GermaNet](http://www.sfs.uni-tuebingen.de/GermaNet/) license.
  * The package `corpus` contains the verb lemma counting pipelines for German and English based on the [DKPro Core](https://dkpro.github.io/dkpro-core/) framework. 
    * to run the pipelines you need to obtain TreeTagger models for German and English (they are not distributed via DKPro Core)
