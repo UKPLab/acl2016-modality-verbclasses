@@ -1,14 +1,14 @@
 # Verbs Taking Clausal and Non-Finite Arguments as Signals of Modality
 
 
-This repository will contain code for experiments described in my ACL paper.
+This repository contains code for experiments described in my ACL paper.
 
 Please use the following citation:
 
 ```
 @inproceedings{ecklekohlerACL2016,
 author = {Judith Eckle-Kohler},
-title = {Verbs Taking Clausal and Non-Finite Arguments as Signals of Modality –
+title = {Verbs Taking Clausal and Non-Finite Arguments as Signals of Modality â€“
 Revisiting the Issue of Meaning Grounded in Syntax},
 	month = aug,
 	year = {2016},
@@ -20,7 +20,7 @@ Revisiting the Issue of Meaning Grounded in Syntax},
 }
 ```
 
-> **Abstract:** We revisit Levin’s theory about the correspondence of verb meaning and syntax and infer semantic classes from
+> **Abstract:** We revisit Levinâ€™s theory about the correspondence of verb meaning and syntax and infer semantic classes from
 a large syntactic classification of more
 than 600 German verbs taking clausal
 and non-finite arguments. Grasping the
@@ -31,11 +31,11 @@ semantic characterization of the inferred
 classes. To this end, we link the inferred
 classes and their English translation
 to independently constructed semantic
-classes in three different lexicons – the
+classes in three different lexicons â€“ the
 German wordnet GermaNet, VerbNet
-and FrameNet – and perform a detailed
+and FrameNet â€“ and perform a detailed
 analysis and evaluation of the resulting
-German–English classification (available
+Germanâ€“English classification (available
 at www.ukp.tu-darmstadt.de/modality-verbclasses/).
 
 Contact person: Dr. Judith Eckle-Kohler, eckle-kohler@ukp.informatik.tu-darmstadt.de
@@ -50,8 +50,10 @@ Don't hesitate to send me an e-mail or report an issue, if something is broken (
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
 
 ## Project structure
-
- * soon to come
+ * The package `align` contains the implementation of the verb sense linking algorithm based on the [DKPro Uby](https://dkpro.github.io/dkpro-uby/) framework. .
+   * to run the main class `AlignVerbClasses` you need a UBY database contatining the IMSLex subset, GermaNet, VerbNet, FrameNet and WordNet. Please contact me to obtain such a database, this requires that you have a [GermaNet](http://www.sfs.uni-tuebingen.de/GermaNet/) license.
+ * The package `corpus` contains the verb lemma counting pipelines for German and English based on the [DKPro Core](https://dkpro.github.io/dkpro-core/) framework. 
+   * to run the pipelines you need to obtain TreeTagger models for German and English (they are not distributed via DKPro Core)
 
 ## Requirements
 
