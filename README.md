@@ -14,7 +14,7 @@ Revisiting the Issue of Meaning Grounded in Syntax},
 	year = {2016},
 	publisher = {Association for Computational Linguistics},
 	booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (ACL 2016)},
-	pages = {(to appear)},
+	pages = {811--822},
 	volume = {Volume 1: Long Papers},
 	address = {Berlin, Germany}
 }
